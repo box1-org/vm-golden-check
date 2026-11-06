@@ -1,0 +1,27 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: vm-golden-check
+  description: "A RHEL 10 image mode virtual machine"
+  annotations:
+    github.com/project-slug: box1-org/vm-golden-check
+    backstage.io/kubernetes-id: vm-golden-check
+    backstage.io/techdocs-ref: dir:.
+    backstage.io/source-location: url:https://github.com/box1-org/vm-golden-check/
+    janus-idp.io/tekton: vm-golden-check
+    argocd/instance-name: openshift-gitops
+    argocd/app-selector: backstage.io/kubernetes-id=vm-golden-check
+    box1.org/template-version: "1.0.0"
+  tags: [rhel, bootc, image-mode, kubevirt, tekton, gitops]
+  links:
+    - url: https://github.com/box1-org/vm-golden-check
+      title: Source Repository
+      icon: github
+    - url: https://console-openshift-console.apps.ocp.box1.org/k8s/ns/vm-golden-check-dev/kubevirt.io~v1~VirtualMachine/vm-golden-check
+      title: Virtual machine (OpenShift console)
+    - url: https://github.com/box1-org/box1-workloads-dev/tree/main/workloads/vm-golden-check
+      title: Desired VM configuration
+spec:
+  type: vm
+  lifecycle: experimental
+  owner: "user:default/mike4263"

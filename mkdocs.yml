@@ -1,0 +1,5 @@
+site_name: vm-golden-check
+nav:
+  - Overview: index.md
+plugins:
+  - techdocs-core
