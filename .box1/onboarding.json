@@ -2,7 +2,7 @@
   "id": "f275b43a-a500-4dd7-99b4-7f29e8e12b6f",
   "name": "vm-golden-check",
   "namespace": "vm-golden-check-dev",
-  "owner": "user:default/mike4263",
+  "owner": "user:default/mike",
   "templateVersion": "1.0.0",
   "profile": "virtual-machine"
 }
